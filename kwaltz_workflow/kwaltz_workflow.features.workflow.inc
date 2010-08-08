@@ -25,6 +25,7 @@ function _kwaltz_workflow_workflow_defaults() {
         'weight' => '-50',
         'sysid' => '1',
         'status' => '1',
+        'access' => array(),
       ),
       '2' => array(
         'ref' => '2',
@@ -33,6 +34,47 @@ function _kwaltz_workflow_workflow_defaults() {
         'weight' => '-10',
         'sysid' => '0',
         'status' => '1',
+        'access' => array(
+          '0' => array(
+            'role' => 'Writer',
+            'grant_view' => '0',
+            'grant_update' => '1',
+            'grant_delete' => '0',
+          ),
+          '1' => array(
+            'role' => 'Publisher',
+            'grant_view' => '0',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '2' => array(
+            'role' => 'Moderator',
+            'grant_view' => '0',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '3' => array(
+            'role' => 'authenticated user',
+            'rid' => '2',
+            'grant_view' => '1',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '4' => array(
+            'role' => 'anonymous user',
+            'rid' => '1',
+            'grant_view' => '1',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '5' => array(
+            'role' => 'author',
+            'rid' => '-1',
+            'grant_view' => '0',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+        ),
       ),
       '3' => array(
         'ref' => '3',
@@ -41,6 +83,47 @@ function _kwaltz_workflow_workflow_defaults() {
         'weight' => '-2',
         'sysid' => '0',
         'status' => '1',
+        'access' => array(
+          '0' => array(
+            'role' => 'Writer',
+            'grant_view' => '0',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '1' => array(
+            'role' => 'Publisher',
+            'grant_view' => '0',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '2' => array(
+            'role' => 'Moderator',
+            'grant_view' => '0',
+            'grant_update' => '1',
+            'grant_delete' => '0',
+          ),
+          '3' => array(
+            'role' => 'authenticated user',
+            'rid' => '2',
+            'grant_view' => '1',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '4' => array(
+            'role' => 'anonymous user',
+            'rid' => '1',
+            'grant_view' => '1',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '5' => array(
+            'role' => 'author',
+            'rid' => '-1',
+            'grant_view' => '0',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+        ),
       ),
       '4' => array(
         'ref' => '4',
@@ -49,6 +132,47 @@ function _kwaltz_workflow_workflow_defaults() {
         'weight' => '2',
         'sysid' => '0',
         'status' => '1',
+        'access' => array(
+          '0' => array(
+            'role' => 'Writer',
+            'grant_view' => '0',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '1' => array(
+            'role' => 'Publisher',
+            'grant_view' => '0',
+            'grant_update' => '1',
+            'grant_delete' => '0',
+          ),
+          '2' => array(
+            'role' => 'Moderator',
+            'grant_view' => '0',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '3' => array(
+            'role' => 'authenticated user',
+            'rid' => '2',
+            'grant_view' => '1',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '4' => array(
+            'role' => 'anonymous user',
+            'rid' => '1',
+            'grant_view' => '1',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '5' => array(
+            'role' => 'author',
+            'rid' => '-1',
+            'grant_view' => '0',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+        ),
       ),
       '5' => array(
         'ref' => '5',
@@ -57,6 +181,47 @@ function _kwaltz_workflow_workflow_defaults() {
         'weight' => '10',
         'sysid' => '0',
         'status' => '1',
+        'access' => array(
+          '0' => array(
+            'role' => 'Writer',
+            'grant_view' => '0',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '1' => array(
+            'role' => 'Publisher',
+            'grant_view' => '0',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '2' => array(
+            'role' => 'Moderator',
+            'grant_view' => '0',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '3' => array(
+            'role' => 'authenticated user',
+            'rid' => '2',
+            'grant_view' => '1',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '4' => array(
+            'role' => 'anonymous user',
+            'rid' => '1',
+            'grant_view' => '1',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+          '5' => array(
+            'role' => 'author',
+            'rid' => '-1',
+            'grant_view' => '0',
+            'grant_update' => '0',
+            'grant_delete' => '0',
+          ),
+        ),
       ),
     ),
     'roles' => array(
@@ -112,6 +277,9 @@ function _kwaltz_workflow_workflow_defaults() {
           ),
         ),
       ),
+    ),
+    'types' => array(
+      'story' => 'story',
     ),
   );
   return $defaults;
